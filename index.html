@@ -5,12 +5,364 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ERP WEBSITE</title>
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline bg-green-700">
-        Hello world!
-    </h1>
+    <section class="bg-primary text-white tracking-wider">
+    <header class="sticky top-0 z-50">
+        <nav class="p-5 md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center"> 
+                <a href="#home">
+                    <img class="h-10 inline" src="/images/d-code-logo-light.svg" alt="">
+                </a>
+                <div class="lg:hidden cursor-pointer mx-2 md:hidden block">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="flex items-center justify-between flex-grow pl-32">
+                <ul class="md:flex gap-4 md:items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    <li class="mx-4 my-6 md:my-0"><a href="#home" class="hover:text-gray-400 duration-200 font-Lato text-base font-semibold">Home</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#pages" class="hover:text-gray-400 duration-200 font-Lato font-semibold text-base">Pages</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#blogs" class="hover:text-gray-400 font-Lato font-semibold text-base duration-200">Blogs</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#elements" class="hover:text-gray-400 font-Lato font-semibold text-base duration-200">Elements</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#mega_menu" class="hover:text-gray-400 text-base font-Lato font-semibold duration-200">MegaMenu</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <li>
+                    <button
+                        class="border-white border-2 text-white-500 px-5 py-2 hover:bg-gray-100 hover:text-gray-700 font-Lato font-bold text-sm">SIGN
+                        IN</button>
+                    <a href="#" class="fa-search-location"></a>
+                </li>
+            </div>
+        </nav>
+    </header>
+</section>
+
+<main>
+    <section>
+        <div class="bg-no-repeat bg-[center_top] bg-cover" style="background-image: url(/images/bg-3.png);">
+            <div class="flex h-[100%] items-center justify-center py-[100px] min-h-[22vh] pb-0 pt-[100px] pr-[0px]">
+                <div class="h-926 w-1200">
+                    <div class="flex flex-col items-center justify-center">
+                        <h1 class="text-3xl md:text-4xl text-white font-SourceSerif font-bold mb-4">
+                            We Delivered the <span class="font-Alegreya">software</span> you need
+                        </h1>
+                        <p class="leading-relaxed mb-4 font-Lato text-lg text-white">
+                            Integrated CRM, project management, time tracking, and billing for
+                        </p>
+                        <p class="leading-relaxed mb-4 font-Lato text-lg text-white ">
+                            freelancers, consultants and teams.
+                        </p>
+
+                        <!-- Buttons Container -->
+                        <div class="flex">
+                            <button class="bg-white text-gray-800 hover:text-blue-500 px-4 py-2 mr-2 font-Lato font-extrabold text-xs rounded-md ease-in duration-200">TRY TO FREE</button>
+                            <button class="border-white border-2 text-white px-5 py-2 hover:bg-gray-100 hover:text-blue-700 font-Lato font-bold text-sm rounded-md ease-in duration-200">▶️ WATCH VIDEO</button>
+                        </div>
+                    
+                            <div class="relative py-10 h-628 w-1170">
+                                <!-- Laptop screen image as background -->
+                                <div class="absolute inset-0 bg-cover bg-center h-full w-full"
+                                    style="background-image: url('/images/laptop-screen (1).png');">
+                                </div>
+                            
+                                <!-- SS-1 image overlay -->
+                                <div class="relative w-756 h-486 left-[-1518] z-998 top-0 block">
+                                    <img src="/images/ss-1.jpg" alt="">
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="pt-[100px] pr-[0px] bg-transparent">
+            <div class="bg-secondary">
+                <div class="container bg-secondary">
+                    <div class="flex flex-col items-center z-20 md:flex-row">
+                        <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                            <h1 class="text-3xl md:text-4xl font-bold leading-snug mb-4">Manage all your work from <span class="font-Alegreya text-4xl text-blue-800 font-bold">One Place</span>
+                            </h1>
+                            <div class="underline-offset-8 border-x-2 border-y-4 border-blue-500"></div>
+                                <p class="leading-relaxed font-Lato text-lg py-6">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales dictum viverra.
+                                </p>
+                                <p class="leading-relaxed font-Lato text-sm py-6">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales dictum viverra. Nam
+                                    gravida dignissim eros.
+                                    Vivamus congue erat ante, volutpat dictum neque dignissim eget.
+                                </p>
+                                <button class="bg-primary px-9 py-3 text-white rounded-md font-Lato font-extrabold text-sm hover:bg-blue-700 hover:shadow-inner ease-in duration-200 cursor-pointer">
+                                    DISCOVER MORE
+                                </button>
+                        </div>
+
+                        <div class="md:w-1/2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zH4s1H2pHyM?si=XTVnQtBJHQJLdgD3"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Focus on getting things done with dcode START-->
+
+    <section id="features" class="bg-secondary-dark">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-20">
+                <h1 class="font-SourceSerif font-bold text-black items-center justify-center text-4xl">Focus on <span class="font-Alegreya text-blue-700 text-4xl font-bold">getting things</span> done with DCode</h1>
+                <p class="bg-primary-dark h-3 w-8 pr-12 right-12"></p>
+                <p class="font-Lato leading-relaxed text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus mi id elit gravida, quis tincidunt purus
+                fringilla. Aenean convallis a neque non pellentesque.</p>
+            </div>
+    
+            <div class="grid grid-cols-3">
+                <!-- card no 1 -->
+                <div class="text-center py-0 px-5">
+                    <div class="bg-primary-dark text-center inline-block rounded-full py-5 px-6 h-00 w-00">
+                        <i><img src="/images/icon-5-light.svg" alt=""></i>
+                    </div>
+                    <h4 class="font-SourceSerif text-2xl font-bold  py-4">Improve Efficiency</h4>
+                    <p class="leading-relaxed font-Lato">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean sodales</p>
+                </div>
+    
+                <!-- card no 2 -->
+                <div class="text-center py-0 px-5">
+                    <div class="bg-primary-dark text-center inline-block rounded-full py-5 px-6 h-00 w-00">
+                        <i><img src="/images/icon-6-light.svg" alt=""></i>
+                    </div>
+                    <h4 class="font-SourceSerif text-2xl font-bold  py-4">Improve Quality</h4>
+                    <p class="leading-relaxed font-Lato">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean sodales</p>
+                    <div class="py-6">
+                        <button
+                            class="bg-primary px-9 py-3 text-white rounded-md font-Lato font-extrabold text-md hover:bg-blue-700 hover:shadow-inner ease-in duration-200 cursor-pointer">
+                            GET STARTED FOR FREE
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- card no 3 -->
+                <div class="text-center py-0 px-5">
+                    <div class="bg-primary-dark text-center inline-block rounded-full py-5 px-6 h-00 w-00">
+                        <i><img src="/images/icon-7-light.svg" alt=""></i>
+                    </div>
+                    <h4 class="font-SourceSerif text-2xl font-bold  py-4">Improve Accountability</h4>
+                    <p class="leading-relaxed font-Lato">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean sodales</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Focus on getting things done with dcode END-->
+
+    <!-- We offer Powerfull features START-->
+    <section id="features" class="bg-primary">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-20">
+                <h1 class="font-SourceSerif font-bold text-black items-center justify-center text-4xl">We offer Powerfull <span>features</span></h1>
+                <p class="bg-primary-dark h-3 w-8 pr-12 right-12"></p>
+                <p class="font-Lato leading-relaxed text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis finibus mi id elit gravida, quis tincidunt purus
+                    fringilla. Aenean convallis a neque non pellentesque.</p>
+            </div>
+        </div>
+    </section>
+    <!-- We offer Powerfull features END-->
+
+
+<!-- Testimonial section -->
+
+<section>
+
+    <div class="p-[100px] container">
+        <div class="">
+            <div class="flex flex-nowrap ml-[-15px] mr-[-15px] items-center">
+                <div class="relative w-[100%] pl-[15px] pr-[15px]">
+                    <div class="box-border">
+                        <img src="/images/newsletter-img.png" alt="">
+                    </div>
+                </div>
+                <div  class="relative w-[100%] pl-[15px] pr-[15px]">
+                    <div class="mb-[30px]">
+                        <h1 class="text-[48px] font-bold mb-[18px] tracking-[-1px]">Subscribe to our <span class="text-blue-600 font-Alegreya">Newsletter</span></h1>
+                        <div>
+                            <p class="font-Lato text-[20px] leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus mi id elit gravida, quis tincidunt purus
+                            fringilla.</p>
+                        </div>
+                    </div>
+                    <!-- form -->
+                    <div class="relative h-[58px] w-[570px]">
+                        <form method="post">
+                            <div class="mb-[10px] relative border border-gray-300 rounded-[9px]">
+                                <input type="email" name="EmailInput" placeholder="Enter Your Mail" required
+                                    class="pt-0 pb-0 pr-32 pl-15 h-[58px] rounded-[9px]">
+                                <input type="submit" value="Subscribe Now"
+                                    class="relative right-0 left-16 top-0 bg-primary px-9 py-3 text-white rounded-md font-Lato font-extrabold text-md hover:bg-blue-700 hover:shadow-inner ease-in duration-200 cursor-pointer overflow-visible">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+<!-- Testimonial section End-->
+
+
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer class="bg-primary-dark">
+        <section>
+            <div class="container bg-primary-dark h-[536px] w-[2471px]">
+                <ul class="grid items-start grid-cols-4">
+                    <li>
+                        <div class="space-y-3 py-[100px]">
+                           <img src="/images/d-code-logo-light.svg" class="h-[56px] w-[185px]" alt="">
+    
+                            <p class="text-base font-Lato text-white font-medium py-5">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit.Dicta rem perferendis
+                                suscipit minus tenetur.
+                            </p>
+                            <p class="font-SourceSerif text-white font-bold text-xl leading-tight">Download the App</p>
+                            
+                            <div class="bg-purple-400 flex gap-4">
+                                <div class="bg-red-500">
+                                    <button class="border-purple-400 text-white border-2 px-6 py-2 font-Lato font-normal text-base rounded-md">
+                                        <i class="fab fa-google-play pr-2"></i>
+                                        Google Play
+                                    </button>
+                                </div>
+                                <div class="bg-yellow-500">
+                                    <button class="border-purple-400 text-white border-2 px-6 py-2 font-Lato font-normal text-base rounded-md">
+                                        <i class="fab fa-apple pr-2"></i>
+                                        App Store
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Useful links -->
+
+                        <li>
+                            <div class="py-[100px] px-[60px]">
+                                <p class="font-SourceSerif text-white font-bold text-xl leading-tight">Useful Links</p>
+                            <div class="flex flex-col gap-3 py-5">
+
+                                <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">Trust & Safety</a>
+                                </i>
+                                <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">Cookie Policy</a>
+                                </i>
+                                <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">Contact Us</a>
+                                </i>
+                                <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">Privacy Policy</a>
+                                </i>
+                                <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">Terms of Service</a>
+                                </i>
+                            </div>
+                        </div>
+                        </li>
+
+                        <!-- Support -->
+
+                        <li>
+                            <div class="py-[100px]">
+                                <p class="font-SourceSerif text-white font-bold text-xl leading-tight">Support</p>
+                            <div class="flex flex-col gap-3 py-5">
+
+                                <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">Documentation</a>
+                                </i>
+                                <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">FAQ</a>
+                                </i>
+                                <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">Press</a>
+                                </i>
+                                <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">Community</a>
+                                </i>
+                            </div>
+                        </div>
+                        </li>
+
+                        <!-- Stay Updated -->
+                        <li>
+                            <div class="py-[100px]">
+                                <p class="font-SourceSerif text-white font-bold text-xl leading-tight">Stay Updated</p>
+                            <div class="flex flex-col gap-3 py-5">
+
+                                <i class="fa fa-envelope-open-text text-white text-xl">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">support@sacredthemes.net</a>
+                                </i>
+                                <i class="fa fa-phone-flip text-white text-xl">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">+1 (234) 567-9801</a>
+                                </i>
+                                <i class="fa fa-at text-white text-xl">
+                                   <a href="" class="font-Lato px-2 font-medium text-base">49 Uniqe Square D, New York, NY 10003, USA</a>
+                                </i>
+                                <div class="grid grid-cols-3 gap-1 py-4">
+                                    <button class="border-purple-400 text-white border-2 px-2 py-4 rounded-md">
+                                
+                                        <i class="fab fa-facebook-f text-white"></i>
+                                    </button>
+                                
+                                    <button class="border-purple-400 text-white border-2 px-2 py-5 text-xl rounded-md">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </button>
+
+            
+                                    <button class="border-purple-400 text-white border-2 px-1 py-4 font-Lato font-normal text-base rounded-md">
+                                
+                                        <i class="fab fa-twitter"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                   
+                </ul>
+                    <div class="items-center border-primary justify-center text-center border-t-[1px] text-white font-Lato">
+                        © Copyright DCode 2021. Made with <i class="fa fa-heart"></i> by SacredThemes.
+                    </div>
+            </div>
+        </section>
+    </footer>
+
+    <section>
+        <footer class="bg-primary">
+            <div class="bg-red-700 grid grid-cols-6 gap-4 container">
+                <div class="bg-blue-400">1</div>
+                <div class="bg-blue-500">2</div>
+                <div class="bg-blue-700">3</div>
+                <div class="bg-blue-900">4</div>
+            </div>
+        </footer>
+    </section>
+
 </body>
 
-</html>
+</html>  
