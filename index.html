@@ -15,7 +15,8 @@
 
 <body>
     <section class="">
-    <header class="fixed top-0 z-50 w-full bg-primary">
+        <!-- dekstop header -->
+    <header class="hidden md:block fixed top-0 z-50 w-full bg-primary">
         <nav class="h-[100px] container flex items-center justify-between">
             <div class="flex justify-between items-center"> 
                 <a href="#home">
@@ -24,11 +25,22 @@
             </div>
             <div class="flex items-center justify-between">
                 <ul class="flex gap-12 text-white">
-                    <li><a href="#home" class="hover:text-gray-400 duration-200 font-Lato text-[17px] font-semibold">Home <i class="fa fa-chevron-down text-[14px]"></i></a></li>
-                    <li><a href="#pages" class="hover:text-gray-400 duration-200 font-Lato font-semibold text-[17px]">Pages <i class="fa fa-chevron-down text-[14px]"></i></a></li>
-                    <li><a href="#blogs" class="hover:text-gray-400 font-Lato font-semibold text-[17px] duration-200">Blogs <i class="fa fa-chevron-down text-[14px]"></i></a></li>
-                    <li><a href="#elements" class="hover:text-gray-400 font-Lato font-semibold text-[17px] duration-200">Elements <i class="fa fa-chevron-down text-[14px]"></i></a></li>
-                    <li><a href="#mega_menu" class="hover:text-gray-400 text-[17px] font-Lato font-semibold duration-200">MegaMenu <i class="fa fa-chevron-down text-[14px]"></i></a></li>
+                    <li class="group relative">
+                        <a href="#home" class="flex items-center hover:text-gray-300 duration-200 font-Lato text-[17px] font-semibold">
+                            Home <i class="fa fa-chevron-down ml-1 text-[14px]"></i>
+                        </a>
+                        <!-- Dropdown Content -->
+                        <ul class="absolute hidden min-w-max bg-white text-gray-800 border border-gray-300 rounded-md shadow-md group-hover:block">
+                            <!-- Dropdown Items -->
+                            <li><a href="#submenu1" class="block px-4 py-2 hover:bg-gray-200">Submenu 1</a></li>
+                            <li><a href="#submenu2" class="block px-4 py-2 hover:bg-gray-200">Submenu 2</a></li>
+                            <!-- Add more dropdown items as needed -->
+                        </ul>
+                    </li>
+                    <li><a href="#pages" class="hover:text-gray-300 duration-200 font-Lato font-semibold text-[17px]">Pages <i class="fa fa-chevron-down text-[14px]"></i></a></li>
+                    <li><a href="#blogs" class="hover:text-gray-300 font-Lato font-semibold text-[17px] duration-200">Blogs <i class="fa fa-chevron-down text-[14px]"></i></a></li>
+                    <li><a href="#elements" class="hover:text-gray-300 font-Lato font-semibold text-[17px] duration-200">Elements <i class="fa fa-chevron-down text-[14px]"></i></a></li>
+                    <li><a href="#mega_menu" class="hover:text-gray-300 text-[17px] font-Lato font-semibold duration-200">MegaMenu <i class="fa fa-chevron-down text-[14px]"></i></a></li>
                 </ul>
             </div>
             <div class="pl-4">
@@ -40,6 +52,10 @@
                 </div>
             </div>
         </nav>
+    </header>
+    <!-- Mobile header -->
+    <header class="block md:hidden h-10 bg-red-300">
+        hello
     </header>
 </section>
 
@@ -767,8 +783,20 @@
         </div>
                     
         </footer>
+
+        <section>
+            <div class="relative group">
+                <h1>home</h1>
+                <ul class="absolute hidden bg-pink-400 group-hover:block">
+                    <li>menu</li>
+                    <li>menu</li>
+                </ul>
+            </div>
+        </section>
     </section>
     
+
+
 </body>
 
 </html>  
