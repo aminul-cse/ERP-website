@@ -24,18 +24,23 @@
                 </a>
             </div>
             <div class="flex items-center justify-between">
-                <ul class="flex gap-12 text-white">
+                <ul class="flex sm:flex sm:items-center sm:z-auto sm:w-auto sm:py-0 sm:pl-0 sm:opacity-100 gap-12 text-white">
                     <li class="group relative">
                         <a href="#home" class="flex items-center hover:text-gray-300 duration-200 font-Lato text-[17px] font-semibold">
                             Home <i class="fa fa-chevron-down ml-1 text-[14px]"></i>
                         </a>
                         <!-- Dropdown Content -->
-                        <ul class="absolute hidden min-w-max bg-white text-gray-800 border border-gray-300 rounded-md shadow-md group-hover:block">
-                            <!-- Dropdown Items -->
-                            <li><a href="#submenu1" class="block px-4 py-2 hover:bg-gray-200">Submenu 1</a></li>
-                            <li><a href="#submenu2" class="block px-4 py-2 hover:bg-gray-200">Submenu 2</a></li>
-                            <!-- Add more dropdown items as needed -->
-                        </ul>
+                        
+                            <ul class="absolute hidden bg-white border rounded-md group-hover:block px-5">
+                                <div class="h-52 w-36 mt-8 text-black text-base font-Lato font-extrabold cursor-pointer">
+                                    <li>Menu 1</li>
+                                    <li class="py-3">Menu 2</li>
+                                    <li>Menu 3</li>
+                                    <li class="py-3">Menu 4</li>
+                                    <li>Menu 5</li>
+                                </div>
+                            </ul>
+                       
                     </li>
                     <li><a href="#pages" class="hover:text-gray-300 duration-200 font-Lato font-semibold text-[17px]">Pages <i class="fa fa-chevron-down text-[14px]"></i></a></li>
                     <li><a href="#blogs" class="hover:text-gray-300 font-Lato font-semibold text-[17px] duration-200">Blogs <i class="fa fa-chevron-down text-[14px]"></i></a></li>
@@ -54,8 +59,27 @@
         </nav>
     </header>
     <!-- Mobile header -->
-    <header class="block md:hidden h-10 bg-red-300">
-        hello
+    <header class="block md:hidden h-28 bg-blue-500">
+        <div class="flex items-center justify-center pl-[15px] pr-[15px]">
+            <div class="flex flex-row justify-between mt-5">
+                <div class="basis-2/5">
+                    <div >
+                        <img src="/images/d-code-logo-light.svg" alt="">
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <div class="text-4xl text-white">
+                        <i class="fa fa-navicon" onclick="Menu(this)"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <button class="border-2 border-white text-white px-9 py-3 mr-2 font-Lato font-extrabold text-sm rounded-md tracking-wider">SIGN IN</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </header>
 </section>
 
@@ -64,33 +88,37 @@
         <div class="bg-no-repeat bg-[center_top] bg-cover" style="background-image: url(/images/bg-3.png);">
             <div class="flex h-[100%] items-center justify-center py-[100px] min-h-[22vh] pb-0 pt-[100px] pr-[0px]">
                 <div class="py-4">
-                    <div class="flex flex-col items-center justify-center">
-                        <h1 class="text-[48px] text-white font-SourceSerif font-bold mb-4">
-                            We Deliver the <span class="font-Alegreya">software</span> you need
+                    <div class="flex flex-col items-center justify-center text-center lg:mt-4">
+                        <h1 class="text-[36px] lg:text-[48px] text-white font-SourceSerif font-bold mb-4">
+                            We Deliver the <span class="font-Alegreya">Software</span> you need
                         </h1>
                         <p class="leading-relaxed mb-4 font-Lato text-[20px] text-white text-center">
-                            Integrated CRM, project management, time tracking, and billing for <br>
+                            Integrated CRM, project management, time tracking, and billing for
                             freelancers, consultants and teams.
                         </p>
                         
 
                         <!-- Buttons Container -->
-                        <div class="flex mt-4 gap-3">
-                            <button class="bg-white text-gray-800 hover:text-blue-500 px-8 py-3 mr-2 font-Lato font-extrabold text-sm rounded-md ease-in duration-200">TRY TO FREE</button>
-                            <button class="border-white border-2 text-white px-9 py-3 hover:bg-gray-100 hover:text-blue-700 font-Lato font-extrabold text-sm rounded-md ease-in duration-200">▶️ WATCH VIDEO</button>
+                        <div class="flex flex-col items-center justify-center sm:flex-row mt-4 gap-3">
+                            <div class="pl-3">
+                                <button class="bg-white text-blue-800 hover:text-blue-500 px-8 py-3.5 mr-2 font-Lato font-black text-sm rounded-md ease-in duration-200">TRY TO FREE</button>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <button class="border-white border-2 text-white px-8 py-2.5 hover:bg-gray-100 hover:text-gray-700 font-Lato text-sm rounded-md ease-in duration-200 text-center"><i class="fa fa-play-circle text-2xl mr-3"></i> WATCH VIDEO</button>
+                            </div>
                         </div>
                     
-                            <div>
+                            <div class="mt-5">
                                 <!-- Laptop screen image as background -->
                                 <div class="relative w-full">
                                    <img src="/images/laptop-screen.png" class="w-full" alt="">
-                                   <div class="absolute top-0">
+                                   <div class="absolute top-0 pl-[56px] lg:pl-[220px] mt-[16px] lg:mt-[65px] h-[133px] lg:h-[530px] w-[264px] lg:w-full">
                                        <img src="/images/ss-1.jpg" class="h-full w-[300px]" alt="">
                                    </div>
                                 </div>
                             
                                 <!-- SS-1 image overlay -->
-                            </div>
+                     </div>
                 </div>
             </div>
         </div>
@@ -98,12 +126,12 @@
 
     <section>
         <div class="pt-[100px] container">
-            <div class="px-10">
+            <div class="lg:px-10">
                 <div class="">
-                    <div class="flex flex-col items-start z-20 md:flex-row">
-                        <div class="text-start mb-12 pr-10">
-                            <h1 class="text-5xl font-bold leading-snug mb-4">Manage all your work from <span class="font-Alegreya text-5xl text-blue-800 font-bold">One Place</span>
-                            </h1>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 items-start z-20">
+                        <div class="text-start mb-12">
+                            <p class="text-[34px] lg:text-[48px] font-bold lg:leading-snug mb-4 tracking-tighter">Manage all your work from <span class="font-Alegreya text-[34px] lg:text-[48px] text-blue-800 font-bold">One Place</span>
+                            </p>
                             <div class="flex items-start mt-[18px]">
                                 <div class="h-[6px] w-[60px] bg-blue-700"></div>
                             </div>
@@ -120,8 +148,8 @@
                                 </button>
                         </div>
 
-                        <div class="mt-14">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zH4s1H2pHyM?si=XTVnQtBJHQJLdgD3"
+                        <div class="mt-14 lg:pl-6">
+                            <iframe class="w-[100%] h-72" src="https://www.youtube.com/embed/zH4s1H2pHyM?si=XTVnQtBJHQJLdgD3"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
@@ -138,7 +166,7 @@
     <section id="features" class="bg-secondary-dark">
         <div class="container py-20">
             <div class="text-center m-auto mb-20">
-                <h1 class="font-SourceSerif font-bold text-black items-center justify-center text-5xl">Focus on <span class="font-Alegreya text-blue-700 text-5xl font-bold">getting things</span> done with DCode</h1>
+                <h1 class="font-SourceSerif font-bold text-black items-center justify-center text-[36px] lg:text-5xl">Focus on <span class="font-Alegreya text-blue-700 text-[36px] lg:text-5xl font-bold">getting things</span> done with DCode</h1>
                 <div class="flex items-center justify-center mt-[18px]">
                     <div class="h-[6px] w-[60px] bg-blue-700"></div>
                 </div>
@@ -146,9 +174,9 @@
                 fringilla. Aenean convallis a neque non pellentesque.</p>
             </div>
     
-            <div class="grid grid-cols-3">
+            <div class="grid grid-cols-1 lg:grid-cols-3 ">
                 <!-- card no 1 -->
-                <div class="text-center py-0 px-5">
+                <div class="text-center py-0 px-5 mb-24 lg:mb-0">
                     <div class="bg-primary-dark text-center inline-block rounded-full py-5 px-6 h-00 w-00">
                         <i><img src="/images/icon-5-light.svg" alt=""></i>
                     </div>
@@ -157,22 +185,17 @@
                 </div>
     
                 <!-- card no 2 -->
-                <div class="text-center py-0 px-5">
+                <div class="text-center py-0 px-5 mb-24 lg:mb-0">
                     <div class="bg-primary-dark text-center inline-block rounded-full py-5 px-6 h-00 w-00">
                         <i><img src="/images/icon-6-light.svg" alt=""></i>
                     </div>
                     <h4 class="font-SourceSerif text-2xl font-bold  py-4">Improve Quality</h4>
                     <p class="leading-relaxed font-Lato">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean sodales</p>
-                    <div class="py-6">
-                        <button
-                            class="bg-primary px-9 py-3 text-white rounded-md font-Lato font-extrabold text-md hover:bg-blue-700 hover:shadow-inner ease-in duration-200 cursor-pointer">
-                            GET STARTED FOR FREE
-                        </button>
-                    </div>
+                    
                 </div>
     
                 <!-- card no 3 -->
-                <div class="text-center py-0 px-5">
+                <div class="text-center py-0 px-5 mb-24 lg:mb-0">
                     <div class="bg-primary-dark text-center inline-block rounded-full py-5 px-6 h-00 w-00">
                         <i><img src="/images/icon-7-light.svg" alt=""></i>
                     </div>
@@ -181,23 +204,31 @@
                 </div>
             </div>
             
+            <div class="py-6 flex items-center justify-center">
+                <button
+                    class="bg-primary px-9 py-3 text-white rounded-md font-Lato font-extrabold text-md hover:bg-blue-700 hover:shadow-inner ease-in duration-200 cursor-pointer">
+                    GET STARTED FOR FREE
+                </button>
+            </div>
         </div>
     </section>
 
     <!-- Focus on getting things done with dcode END-->
 
     <!-- We offer Powerfull features-->
-    <section id="features" class="bg-blue-700 pb-[810px] px-[0px]">
-        <div class="h-[300px] w-[100%] bg-cover bg-no-repeat bg-bottom"
+    <section id="features" class="bg-blue-700 pb-[2850px] lg:pb-[810px] px-[0px]">
+        <div class="h-[300px] w-auto bg-cover bg-no-repeat bg-bottom container"
             style="background-image: url('/images/half-circle-bg.png');">
-            <div class="container">
-                <h1 class="font-SourceSerif font-bold text-white text-center pt-28 text-5xl mb-[18px]">We offer Powerfull <span class="font-Alegreya italic">features</span></h1>
+            <div class="">
+                <div class="flex items-center justify-center">
+                    <h1 class="font-SourceSerif font-bold text-white pt-24 text-[30px] lg:text-5xl mb-[18px] text-center">We offer Powerfull <span class="font-Alegreya">features</span></h1>
+                </div>
                 <p class="font-Lato leading-relaxed text-xl text-center text-white mb-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis finibus mi id elit gravida, <br>quis tincidunt purus
+                    Duis finibus mi id elit gravida,<br>quis tincidunt purus
                     fringilla. Aenean convallis a neque non pellentesque.
                 </p>
                 <div class="h-[60px]"></div>
-                <div class="grid grid-cols-3 gap-7">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
                     <div class="col-span-1 cursor-pointer hover:drop-shadow-xl ease-in duration-200">
                         <div class="bg-blue-800 border-[6px] rounded-lg border-blue-800">
                             <div class="py-[40px] px-[30px]">
@@ -213,19 +244,19 @@
                         </div>
                     </div>
                     <div class="col-span-1 cursor-pointer hover:drop-shadow-xl ease-in duration-200">
-                    <div class="bg-blue-800 border-[6px] rounded-lg border-blue-800">
-                        <div class="py-[40px] px-[30px]">
-                            <div class="">
-                                <p class="absolute h-[10px] w-[3px] bg-white"></p>
-                                <p class="relative h-[10px] w-[10px] bg-white left-[6px]"></p>
-                            </div>
-                            <div class="pl-[30px]">
-                                <h1 class="mt-[-24px] font-SourceSerif text-[24px] text-white font-bold">Time Billing</h1>
-                                <p class="mt-[18px] text-[16px] text-white font-Lato">Pellentesque at libero sed tellus fringilla
+                        <div class="bg-blue-800 border-[6px] rounded-lg border-blue-800">
+                            <div class="py-[40px] px-[30px]">
+                                <div class="">
+                                    <p class="absolute h-[10px] w-[3px] bg-white"></p>
+                                    <p class="relative h-[10px] w-[10px] bg-white left-[6px]"></p>
+                                </div>
+                                <div class="pl-[30px]">
+                                    <h1 class="mt-[-24px] font-SourceSerif text-[24px] text-white font-bold">Time Billing</h1>
+                                    <p class="mt-[18px] text-[16px] text-white font-Lato">Pellentesque at libero sed tellus fringilla
                                     volutpat. Nullam vulputate velit id augue commodo scelerisque.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                     <div class="col-span-1 cursor-pointer hover:drop-shadow-xl ease-in duration-200">
                         <div class="bg-blue-800 border-[6px] rounded-lg border-blue-800">
@@ -243,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-3 gap-7 py-7">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-7 py-7">
                     <div class="col-span-1 cursor-pointer hover:drop-shadow-xl ease-in duration-200">
                         <div class="bg-blue-800 border-[6px] rounded-lg border-blue-800">
                             <div class="py-[40px] px-[30px]">
@@ -290,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-3 gap-7">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
                     <div class="col-span-1 cursor-pointer hover:drop-shadow-xl ease-in duration-200">
                         <div class="bg-blue-800 border-[6px] rounded-lg border-blue-800">
                             <div class="py-[40px] px-[30px]">
@@ -344,9 +375,9 @@
 
     <!-- Pricing plans -->
     <section>
-        <div class="container py-[100px] px-[0px] bg-slate-100">
+        <div class="container py-[100px] lg:py-[100px] px-[0px] bg-slate-100">
             <div class="mb-[18px]">
-                <h1 class="font-SourceSerif text-[48px] font-bold text-center">Pricing Plans</h1>
+                <h1 class="font-SourceSerif text-[36px] lg:text-[48px] font-bold text-center">Pricing Plans</h1>
                 <div class="flex items-center justify-center mt-[18px]">
                     <div class="h-[6px] w-[60px] bg-blue-700"></div>
                 </div>
@@ -357,7 +388,7 @@
                     fringilla. Aenean convallis a neque non pellentesque.
                 </p>
             </div>
-            <div class="container grid  grid-cols-1 lg:grid-cols-3 gap-7 pt-32">
+            <div class="container grid grid-cols-1 lg:grid-cols-3 gap-7 pt-32">
                 <div class="col-span-1">
                     <div class="bg-white py-[60px] px-[30px] border rounded-lg">
                         <div class="mt-[-150px]">
@@ -391,7 +422,7 @@
                                 </li>
                                 <li class="pb-4">
                                     <i class="fa fa-check text-blue-700 text-[18px] font-bold"></i>
-                                    <span class="text-lg font-semibold font-Lato px-3">1 Month Support Service</span>
+                                    <span class="text-base lg:text-lg font-semibold font-Lato px-0 lg:px-3">1 Month Support Service</span>
                                 </li>
                                 <li class="pb-4">
                                     <i class="fa fa-check text-blue-700 text-[18px] font-bold"></i>
@@ -416,7 +447,7 @@
                     </div>
 
                 </div>
-                <div class="col-span-1">
+                <div class="col-span-1 py-24 lg:py-0">
                     <div class="bg-white py-[60px] px-[30px] border rounded-lg">
                         <div class="mt-[-150px]">
                             <div
@@ -452,7 +483,7 @@
                                 </li>
                                 <li class="pb-4">
                                     <i class="fa fa-check text-blue-700 text-[18px] font-bold"></i>
-                                    <span class="text-lg font-semibold font-Lato px-3">1 year Support Service</span>
+                                    <span class="text-base lg:text-lg font-semibold font-Lato px-0 lg:px-3">1 year Support Service</span>
                                 </li>
                                 <li class="pb-4">
                                     <i class="fa fa-check text-blue-700 text-[18px] font-bold"></i>
@@ -514,7 +545,7 @@
                                 </li>
                                 <li class="pb-4">
                                     <i class="fa fa-check text-blue-700 text-[18px] font-bold"></i>
-                                    <span class="text-lg font-semibold font-Lato px-3">1 year Support Service</span>
+                                    <span class="text-base lg:text-lg font-semibold font-Lato px-0 lg:px-3">1 year Support Service</span>
                                 </li>
                                 <li class="pb-4">
                                     <i class="fa fa-check text-blue-700 text-[18px] font-bold"></i>
@@ -546,12 +577,12 @@
 
     <!-- Happy Clients Feedback -->
     <section>
-        <div class="pb-[345px]">
-            <div class="container bg-no-repeat bg-[center_top] bg-cover h-[400px] w-[100%]"
+        <div class="pb-[1180px] lg:pb-[400px]">
+            <div class="container bg-no-repeat bg-[center_top] bg-cover h-[600px] lg:h-[400px] w-[100%]"
                 style="background-image: url(/images/bg-2.jpg);">
                 <div class="pt-24">
-                    <h2 class="font-SourceSerif text-[48px] text-white font-bold mb-[18px] tracking-[-1px] m-0 leading-tight">
-                        Happy Clients <span class="font-Alegreya">Feedback</span></h2>
+                    <h2 class="font-SourceSerif text-[36px] lg:text-[48px] text-white font-bold mb-[18px] tracking-[-1px] m-0 leading-tight">
+                        Happy Clients <span class="font-Alegreya text-[36px] lg:text-[48px]">Feedback</span></h2>
                     <p class="font-Lato text-white text-[20px] leading-relaxed">Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit. Duis finibus mi id elit gravida,<br> quis tincidunt purus
                         fringilla. Aenean convallis a neque non pellentesque.</p>
@@ -620,16 +651,16 @@
     </section>
 
     <!-- newsletter -->
-    <section class="container p-[100px_0px]">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="container">
-                <img src="/images/newsletter-img.png" alt="">
+    <section class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 h-[700px] lg:h-[450px]">
+            <div class="">
+                <img src="/images/newsletter-img.png" class="lg:h-96" alt="">
             </div>
-            <div class="relative h-[58px] w-[570px] mb-[30px]">
-                <div class="mt-14">
-                    <h1 class="text-[48px] font-bold mb-[18px] tracking-[-1px]">Subscribe to our <span
-                        class="text-blue-600 font-Alegreya">Newsletter</span>
-                        <div class="h-[6px] w-[60px] mt-[18px] block bg-blue-700"></div>
+            <div class="relative">
+                <div class="mt-2 lg:mt-14">
+                    <h1 class="text-[36px] lg:text-[48px] font-bold mb-[18px] tracking-[-1px]">Subscribe to our <span
+                        class="text-blue-600 font-Alegreya text-[36px] lg:text-[48px]">Newsletter</span>
+                        <div class="h-[6px] w-[60px] mt-[18px] bg-blue-700"></div>
                     </h1>
                 </div>
 
@@ -640,11 +671,11 @@
                     </p>
                 </div>
 
-                    <div class="flex items-center justify-center mt-8">
-                        <div class="flex-1 relative">
+                    <div class="lg:flex items-center justify-center mt-8">
+                        <div class="flex-1 lg:relative">
                             <input type="text" class="border rounded-lg w-full p-4" placeholder="Email">
                         </div>
-                        <div class="absolute right-0 pr-4">
+                        <div class="lg:absolute right-0 pr-4 py-2">
                             <button class="bg-primary px-9 py-3 text-white rounded-md font-Lato font-extrabold hover:bg-blue-700 hover:shadow-inner ease-in duration-200 cursor-pointer text-[14px] ">SUBSCRIBE NOW! </button>
                         </div>
                     </div>
@@ -658,14 +689,14 @@
 
     <section>
         <footer class="bg-blue-700">
-            <div class="grid grid-cols-6 gap-4 container py-[100px]">
+            <div class="grid grid-cols-1 lg:grid-cols-6 gap-4 container py-[80px] lg:py-[100px]">
                 <div class="col-span-2">
                     <div class="mb-[30px]">
                         <img src="/images/d-code-logo-light.svg" class="h-[56px] w-[185px]" alt="">
                     </div>
                         <div class="text-base font-Lato text-white font-normal pb-[12px]">
                             Lorem ipsum dolor sit amet consectetur,
-                            adipisicing <br>elit.Aenean sodales dictum viverra. Nam gravida <br>dignissim eros.
+                            adipisicing elit.Aenean sodales dictum viverra. Nam gravida dignissim eros.
                         </div>
                         <div class="font-SourceSerif text-white font-bold text-xl leading-tight">Download the App</div>
                         <div class="mt-4">
@@ -678,8 +709,7 @@
                                     </button>
                                 </div>
                                 <div>
-                                    <button
-                                        class="border-blue-500 text-white border px-6 py-2 font-Lato font-normal text-base rounded-md">
+                                    <button class="border-blue-500 text-white border px-6 py-2 font-Lato font-normal text-base rounded-md">
                                         <i class="fab fa-apple pr-2"></i>
                                         App Store
                                     </button>
@@ -694,47 +724,65 @@
                     <div class="mb-5">
                         <h1 class="font-SourceSerif text-[20px] text-white font-bold">Useful Links</h1>
                     </div>
-                    <div class="">
-                        <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 mb-3">
-                            <a href="" class="font-Lato  font-medium text-base px-2">Trust & Safety</a>
-                        </i>
-                        <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 mb-3">
-                            <a href="" class="font-Lato font-medium text-base px-2">Cookie Policy</a>
-                        </i>
-                        <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 mb-3">
-                            <a href="" class="font-Lato font-medium text-base px-2">Contact Us</a>
-                        </i>
-                        <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 mb-3">
-                            <a href="" class="font-Lato  font-medium text-base px-2">Privacy Policy</a>
-                        </i>
-                        <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 mb-3">
-                            <a href="" class="font-Lato  font-medium text-base px-2">Terms of Service</a>
-                        </i>
-                    </div>
+                        <ul>
+                            <div class="pb-10">
+                                <li class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 absolute">
+                                        <a href="" class="font-Lato  font-medium text-base px-2 relative">Trust & Safety</a>
+                                </li>
+                            </div>
+                            <div class="pb-10">
+                                <li class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 absolute">
+                                        <a href="" class="font-Lato font-medium text-base px-2 relative">Cookie Policy</a>
+                                </li>
+                            </div>
+                            <div class="pb-4">
+                                <li class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                        <a href="" class="font-Lato font-medium text-base px-2">Contact Us</a>
+                                </li>
+                            </div>
+                            <div class="pb-4">
+                                 <li class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300">
+                                        <a href="" class="font-Lato  font-medium text-base px-2">Privacy Policy</a>
+                                </li>
+                            </div>
+                            <div class="">
+                                <li class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 mb-3">
+                                        <a href="" class="font-Lato  font-medium text-base px-2">Terms of Service</a>
+                                </li>
+                            </div>
+                        </ul>
                 </div> 
 
                 <!-- Support -->
 
-                <div class="col-span-1">
+                <div class="col-span-1 hidden lg:block">
                     <div class="mb-5">
                         <h1 class="font-SourceSerif text-[20px] text-white font-bold">Support</h1>
                     </div>
-                    <div class="">
-                        <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 mb-3">
-                            <a href="" class="font-Lato  font-medium text-base px-2">Documentation</a>
-                        </i>
-                        <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 mb-3">
-                            <a href="#" class="font-Lato font-medium text-base px-2">FAQ</a>
-                        </i><br>
-                        <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 mb-3">
-                            <a href="#" class="font-Lato font-medium text-base px-2">Press</a>
-                        </i>
-                        
-                        <i class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 mb-3">
-                            <a href="" class="font-Lato  font-medium text-base px-2">Community</a>
-                        </i>
-                    </div>
-                </div> 
+                        <ul>
+                            <div class="pb-10">
+                                <li class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 absolute">
+                                    <a href="" class="font-Lato  font-medium text-base px-2 relative">Documentation</a>
+                                </li>
+                            </div>
+                            <div class="pb-10">
+                                <li class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 absolute">
+                                    <a href="" class="font-Lato  font-medium text-base px-2 relative">FAQ</a>
+                                </li>
+                            </div>
+                            <div class="pb-10">
+                                <li class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 absolute">
+                                    <a href="" class="font-Lato  font-medium text-base px-2 relative">Press</a>
+                                </li>
+                            </div>
+                            
+                            <div class="pb-10">
+                                <li class="fa fa-dot-circle text-white text-sm hover:text-gray-300 ease-in duration-300 absolute">
+                                    <a href="" class="font-Lato  font-medium text-base px-2 relative">Community</a>
+                                </li>
+                             </div>
+                        </ul>
+                    </div> 
 
                 <!-- Stay updated -->
 
@@ -742,17 +790,24 @@
                     <div class="mb-5">
                         <h1 class="font-SourceSerif text-[20px] text-white font-bold">Stay Updated</h1>
                     </div>
-                    <div class="">
-                        <i class="fa fa-envelope-open-text text-white text-xl mb-3">
-                            <a href="" class="font-Lato px-2 font-medium text-base">support@sacredthemes.net</a>
-                        </i>
-                        <i class="fa fa-phone-flip text-white text-xl mb-3">
-                            <a href="" class="font-Lato px-2 font-medium text-base">+1 (234) 567-9801</a>
-                        </i>
-                        <i class="fa fa-at text-white text-xl mb-3">
-                            <a href="" class="font-Lato px-2 font-medium text-base">49 Uniqe Square D, New York, NY 10003, USA</a>
-                        </i>
-                            <div class="mt-4">
+                        <ul>
+                            <div class="pb-10">
+                                <li class="fa fa-envelope-open-text text-white text-xl hover:text-gray-300 ease-in duration-300 absolute">
+                                    <a href="" class="font-Lato  font-medium text-base px-2 relative">support@sacredthemes.net</a>
+                                </li>
+                            </div>
+                            <div class="pb-10">
+                                <li class="fa fa-phone-flip text-white text-xl hover:text-gray-300 ease-in duration-300 absolute">
+                                    <a href="" class="font-Lato  font-medium text-base px-2 relative">+1 (234) 567-9801</a>
+                                </li>
+                            </div>
+                            <div class="pb-10">
+                                <li class="fa fa-at text-white text-xl hover:text-gray-300 ease-in duration-300 absolute">
+                                    <a href="" class="font-Lato  font-medium text-base px-2 relative">49 Uniqe Square D, New York, NY 10003, USA</a>
+                                </li>
+                            </div>
+                        </ul>
+                            <div class="mt-8 lg:mt-4">
                                 <div class="flex gap-1">
                                     <div class="">
                                         <button class="border-blue-500 text-white border px-4 py-2 font-Lato font-normal text-base rounded-md">
@@ -775,28 +830,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="items-center justify-center  border-t-[1px] border-gray-400 py-5 text-white font-Lato text-center">
-                        © Copyright DCode 2021. Made with <i class="fa fa-heart"></i> by SacredThemes.
+                <div class="items-center justify-center  border-t-[1px] border-gray-400 px-3 py-5 text-white font-Lato text-center">
+                        © Copyright DCode 2023. Made with <i class="fa fa-heart"></i> by <span class="font-bold">SacredThemes</span>.
                 </div>
                 
             </div> 
         </div>
                     
         </footer>
-
-        <section>
-            <div class="relative group">
-                <h1>home</h1>
-                <ul class="absolute hidden bg-pink-400 group-hover:block">
-                    <li>menu</li>
-                    <li>menu</li>
-                </ul>
-            </div>
-        </section>
     </section>
     
 
-
+   
 </body>
 
 </html>  
